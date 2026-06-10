@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Christmas Wonder Catalogue 2026</title>
+<style>
+  * { box-sizing:border-box; -webkit-tap-highlight-color:transparent; }
+  html,body { margin:0; height:100%; }
+  body { font-family:Georgia,'Times New Roman',serif;
+    background:radial-gradient(circle at 50% 38%, #efe9dc 0%, #d8d0c0 62%, #b9ad95 100%);
+    user-select:none; -webkit-user-select:none; }
+
+  #title { position:fixed; top:calc(8px + env(safe-area-inset-top)); left:50%; transform:translateX(-50%);
+    z-index:30; background:rgba(11,61,46,.86); color:#fff; font-size:13px; font-weight:700;
+    padding:5px 14px; border-radius:20px; white-space:nowrap; letter-spacing:.3px; pointer-events:none; }
+  #title .g{color:#7fe0a6;} #title .r{color:#ff9b8c;}
+
+  /* Source pages: only copy of images. No-JS fallback = vertical scroll (never blank). */
+  #pages { padding:46px 10px calc(20px + env(safe-area-inset-bottom)); }
+  #pages .page { display:block; max-width:760px; margin:0 auto 14px; }
+  #pages .page img { width:100%; height:auto; display:block; background:#fff; border-radius:3px;
+    box-shadow:0 10px 26px rgba(0,0,0,.32); pointer-events:none; }
+
+  body.flip { overflow:hidden; }
+  body.flip #pages { position:fixed; inset:0; padding:46px 8px calc(46px + env(safe-area-inset-bottom));
+    display:flex; align-items:center; justify-content:center; perspective:2400px; }
+  body.flip #book { position:relative; transform-style:preserve-3d; background:#fff; border-radius:3px;
+    box-shadow:0 22px 50px rgba(0,0,0,.42); }
+  body.flip .page { position:absolute; inset:0; max-width:none; margin:0;
+    transform-origin:left center; transform-style:preserve-3d;
+    transition:transform .6s cubic-bezier(.3,.05,.2,1); will-change:transform; }
+  body.flip .page img { position:absolute; inset:0; width:100%; height:100%; object-fit:contain;
+    box-shadow:none; backface-visibility:hidden; }
+  body.flip .page::after { content:""; position:absolute; inset:0; border-radius:3px; backface-visibility:hidden;
+    background:linear-gradient(90deg, rgba(0,0,0,.16) 0%, rgba(0,0,0,0) 8%, rgba(0,0,0,0) 92%, rgba(0,0,0,.10) 100%); }
+  body.flip .page.flipped { transform:rotateY(-180deg); }
+
+  .zone { display:none; }
+  body.flip .zone { display:block; position:fixed; top:0; bottom:0; width:34%; z-index:15; cursor:pointer; }
+  #zoneL{ left:0; } #zoneR{ right:0; }
+
+  #counter { display:none; }
+  body.flip #counter { display:block; position:fixed; bottom:calc(10px + env(safe-area-inset-bottom)); left:50%;
+    transform:translateX(-50%); z-index:22; background:rgba(0,0,0,.55); color:#fff; font-size:12px;
+    padding:4px 12px; border-radius:14px; pointer-events:none; }
+  .nav { display:none; }
+  @media (hover:hover) and (pointer:fine){
+    body.flip .nav{ display:block; position:fixed; top:50%; transform:translateY(-50%); z-index:22;
+      width:46px;height:46px;border-radius:50%;border:none;cursor:pointer;background:rgba(11,61,46,.82);
+      color:#fff;font-size:22px;line-height:46px;text-align:center; }
+    body.flip #prev{ left:max(8px,env(safe-area-inset-left)); }
+    body.flip #next{ right:max(8px,env(safe-area-inset-right)); }
+  }
+</style>
+</head>
+<body>
+  <div id="title"><span class="g">Christmas</span> <span class="r">Wonder</span> &middot; Catalogue 2026</div>
+  <div id="pages">
+<div class="page"><img loading="eager" decoding="async" src="images/page-01.jpg" alt="Page 1"></div>
+<div class="page"><img loading="eager" decoding="async" src="images/page-02.jpg" alt="Page 2"></div>
+<div class="page"><img loading="lazy" decoding="async" src="images/page-03.jpg" alt="Page 3"></div>
+<div class="page"><img loading="lazy" decoding="async" src="images/page-04.jpg" alt="Page 4"></div>
+<div class="page"><img loading="lazy" decoding="async" src="images/page-05.jpg" alt="Page 5"></div>
+<div class="page"><img loading="lazy" decoding="async" src="images/page-06.jpg" alt="Page 6"></div>
+<div class="page"><img loading="lazy" decoding="async" src="images/page-07.jpg" alt="Page 7"></div>
+<div class="page"><img loading="lazy" decoding="async" src="images/page-08.jpg" alt="Page 8"></div>
+<div class="page"><img loading="lazy" decoding="async" src="images/page-09.jpg" alt="Page 9"></div>
+<div class="page"><img loading="lazy" decoding="async" src="images/page-10.jpg" alt="Page 10"></div>
+<div class="page"><img loading="lazy" decoding="async" src="images/page-11.jpg" alt="Page 11"></div>
+<div class="page"><img loading="lazy" decoding="async" src="images/page-12.jpg" alt="Page 12"></div>
+<div class="page"><img loading="lazy" decoding="async" src="images/page-13.jpg" alt="Page 13"></div>
+<div class="page"><img loading="lazy" decoding="async" src="images/page-14.jpg" alt="Page 14"></div>
+<div class="page"><img loading="lazy" decoding="async" src="images/page-15.jpg" alt="Page 15"></div>
+<div class="page"><img loading="lazy" decoding="async" src="images/page-16.jpg" alt="Page 16"></div>
+<div class="page"><img loading="lazy" decoding="async" src="images/page-17.jpg" alt="Page 17"></div>
+<div class="page"><img loading="lazy" decoding="async" src="images/page-18.jpg" alt="Page 18"></div>
+<div class="page"><img loading="lazy" decoding="async" src="images/page-19.jpg" alt="Page 19"></div>
+<div class="page"><img loading="lazy" decoding="async" src="images/page-20.jpg" alt="Page 20"></div>
+<div class="page"><img loading="lazy" decoding="async" src="images/page-21.jpg" alt="Page 21"></div>
+<div class="page"><img loading="lazy" decoding="async" src="images/page-22.jpg" alt="Page 22"></div>
+<div class="page"><img loading="lazy" decoding="async" src="images/page-23.jpg" alt="Page 23"></div>
+<div class="page"><img loading="lazy" decoding="async" src="images/page-24.jpg" alt="Page 24"></div>
+<div class="page"><img loading="lazy" decoding="async" src="images/page-25.jpg" alt="Page 25"></div>
+<div class="page"><img loading="lazy" decoding="async" src="images/page-26.jpg" alt="Page 26"></div>
+<div class="page"><img loading="lazy" decoding="async" src="images/page-27.jpg" alt="Page 27"></div>
+<div class="page"><img loading="lazy" decoding="async" src="images/page-28.jpg" alt="Page 28"></div>
+<div class="page"><img loading="lazy" decoding="async" src="images/page-29.jpg" alt="Page 29"></div>
+<div class="page"><img loading="lazy" decoding="async" src="images/page-30.jpg" alt="Page 30"></div>
+<div class="page"><img loading="lazy" decoding="async" src="images/page-31.jpg" alt="Page 31"></div>
+<div class="page"><img loading="lazy" decoding="async" src="images/page-32.jpg" alt="Page 32"></div>
+<div class="page"><img loading="lazy" decoding="async" src="images/page-33.jpg" alt="Page 33"></div>
+<div class="page"><img loading="lazy" decoding="async" src="images/page-34.jpg" alt="Page 34"></div>
+<div class="page"><img loading="lazy" decoding="async" src="images/page-35.jpg" alt="Page 35"></div>
+<div class="page"><img loading="lazy" decoding="async" src="images/page-36.jpg" alt="Page 36"></div>
+<div class="page"><img loading="lazy" decoding="async" src="images/page-37.jpg" alt="Page 37"></div>
+<div class="page"><img loading="lazy" decoding="async" src="images/page-38.jpg" alt="Page 38"></div>
+<div class="page"><img loading="lazy" decoding="async" src="images/page-39.jpg" alt="Page 39"></div>
+<div class="page"><img loading="lazy" decoding="async" src="images/page-40.jpg" alt="Page 40"></div>
+<div class="page"><img loading="lazy" decoding="async" src="images/page-41.jpg" alt="Page 41"></div>
+<div class="page"><img loading="lazy" decoding="async" src="images/page-42.jpg" alt="Page 42"></div>
+<div class="page"><img loading="lazy" decoding="async" src="images/page-43.jpg" alt="Page 43"></div>
+<div class="page"><img loading="lazy" decoding="async" src="images/page-44.jpg" alt="Page 44"></div>
+<div class="page"><img loading="lazy" decoding="async" src="images/page-45.jpg" alt="Page 45"></div>
+<div class="page"><img loading="lazy" decoding="async" src="images/page-46.jpg" alt="Page 46"></div>
+<div class="page"><img loading="lazy" decoding="async" src="images/page-47.jpg" alt="Page 47"></div>
+<div class="page"><img loading="lazy" decoding="async" src="images/page-48.jpg" alt="Page 48"></div>
+<div class="page"><img loading="lazy" decoding="async" src="images/page-49.jpg" alt="Page 49"></div>
+<div class="page"><img loading="lazy" decoding="async" src="images/page-50.jpg" alt="Page 50"></div>
+<div class="page"><img loading="lazy" decoding="async" src="images/page-51.jpg" alt="Page 51"></div>
+<div class="page"><img loading="lazy" decoding="async" src="images/page-52.jpg" alt="Page 52"></div>
+<div class="page"><img loading="lazy" decoding="async" src="images/page-53.jpg" alt="Page 53"></div>
+<div class="page"><img loading="lazy" decoding="async" src="images/page-54.jpg" alt="Page 54"></div>
+<div class="page"><img loading="lazy" decoding="async" src="images/page-55.jpg" alt="Page 55"></div>
+<div class="page"><img loading="lazy" decoding="async" src="images/page-56.jpg" alt="Page 56"></div>
+<div class="page"><img loading="lazy" decoding="async" src="images/page-57.jpg" alt="Page 57"></div>
+<div class="page"><img loading="lazy" decoding="async" src="images/page-58.jpg" alt="Page 58"></div>
+<div class="page"><img loading="lazy" decoding="async" src="images/page-59.jpg" alt="Page 59"></div>
+<div class="page"><img loading="lazy" decoding="async" src="images/page-60.jpg" alt="Page 60"></div>
+<div class="page"><img loading="lazy" decoding="async" src="images/page-61.jpg" alt="Page 61"></div>
+<div class="page"><img loading="lazy" decoding="async" src="images/page-62.jpg" alt="Page 62"></div>
+  </div>
+  <div class="zone" id="zoneL"></div>
+  <div class="zone" id="zoneR"></div>
+  <button class="nav" id="prev" aria-label="Previous page">&#10094;</button>
+  <button class="nav" id="next" aria-label="Next page">&#10095;</button>
+  <div id="counter">1 / 62</div>
+<script>
+(function(){
+  function supports3d(){ try{ var el=document.createElement('div'); el.style.transformStyle='preserve-3d';
+    return el.style.transformStyle==='preserve-3d'; }catch(e){ return false; } }
+  if(!supports3d()) return;
+  var pagesEl=document.getElementById('pages');
+  var pages=Array.prototype.slice.call(pagesEl.getElementsByClassName('page'));
+  var total=pages.length;
+  var bookEl=document.createElement('div'); bookEl.id='book';
+  pages.forEach(function(p){ bookEl.appendChild(p); });
+  pagesEl.appendChild(bookEl);
+  document.body.classList.add('flip');
+  var stage=pagesEl, book=bookEl, counter=document.getElementById('counter');
+  var idx=0, IMG_AR=0.707;
+  function sizeBook(ar){ if(ar) IMG_AR=ar; var w=stage.clientWidth-16,h=w/IMG_AR,ah=stage.clientHeight-92;
+    if(h>ah){ h=ah; w=h*IMG_AR; } book.style.width=Math.round(w)+'px'; book.style.height=Math.round(h)+'px'; }
+  var first=pages[0].querySelector('img');
+  function tryAR(){ if(first.naturalWidth) sizeBook(first.naturalWidth/first.naturalHeight); else sizeBook(); }
+  if(first.complete) tryAR(); else first.addEventListener('load', tryAR);
+  sizeBook(); window.addEventListener('resize', sizeBook);
+  function restack(){ for(var i=0;i<total;i++){ var p=pages[i];
+    if(i<idx){ p.classList.add('flipped'); p.style.zIndex=i; }
+    else { p.classList.remove('flipped'); p.style.zIndex=(total-i); } }
+    counter.textContent=(idx+1)+' / '+total; }
+  function next(){ if(idx<total-1){ idx++; restack(); } }
+  function prev(){ if(idx>0){ idx--; restack(); } }
+  document.getElementById('zoneR').addEventListener('click', next);
+  document.getElementById('zoneL').addEventListener('click', prev);
+  document.getElementById('next').addEventListener('click', next);
+  document.getElementById('prev').addEventListener('click', prev);
+  window.addEventListener('keydown', function(e){
+    if(e.key==='ArrowRight'||e.key==='PageDown'||e.key===' '){ e.preventDefault(); next(); }
+    else if(e.key==='ArrowLeft'||e.key==='PageUp'){ e.preventDefault(); prev(); }
+    else if(e.key==='Home'){ idx=0; restack(); } else if(e.key==='End'){ idx=total-1; restack(); } });
+  var sx=null;
+  stage.addEventListener('touchstart', function(e){ sx=e.touches[0].clientX; }, {passive:true});
+  stage.addEventListener('touchend', function(e){ if(sx===null) return;
+    var dx=e.changedTouches[0].clientX-sx; sx=null; if(dx<-40) next(); else if(dx>40) prev(); }, {passive:true});
+  restack();
+})();
+</script>
+</body>
+</html>
