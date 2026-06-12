@@ -6,7 +6,7 @@
 <title>Christmas Wonder Catalogue 2026</title>
 <meta property="og:title" content="Christmas Wonder Catalogue 2026">
 <meta property="og:description" content="Artisan Collection — handmade Christmas gifts from around the world.">
-<meta property="og:image" content="https://josette0714-code.github.io/christmas-wonder-catalogue-2026/images/page-001.jpg">
+<meta property="og:image" content="https://josette0714-code.github.io/christmas-wonder-catalogue-2026/page-001.jpg">
 <style>
   *{box-sizing:border-box;-webkit-tap-highlight-color:transparent;}
   html,body{margin:0;height:100%;}
@@ -43,7 +43,7 @@
 <script>
 (function(){
   var TOTAL=101;
-  function src(n){ return 'images/page-'+String(n).padStart(3,'0')+'.jpg'; }
+  function src(n){ return 'page-'+String(n).padStart(3,'0')+'.jpg'; }
   var pg=document.getElementById('pg'), counter=document.getElementById('counter'), idx=1;
   var cache={};
   function preload(n){ if(n<1||n>TOTAL||cache[n]) return; var im=new Image(); im.src=src(n); cache[n]=im; }
